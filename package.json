@@ -1,0 +1,42 @@
+{
+	"name": "grunt-nette-tester",
+	"description": "Grunt plugin for running Nette Tester.",
+	"homepage": "https://github.com/nette/grunt-nette-tester",
+	"version": "0.9.3",
+	"author": {
+		"name": "David Grudl",
+		"url": "http://davidgrudl.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/nette/grunt-nette-tester.git"
+	},
+	"bugs": {
+		"url": "https://github.com/nette/grunt-nette-tester/issues"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/nette/grunt-nette-tester/blob/master/license.md"
+		}
+	],
+	"main": "Gruntfile.js",
+	"engines": {
+		"node": ">= 0.8.0"
+	},
+	"scripts": {
+		"test": "grunt test"
+	},
+	"devDependencies": {
+		"grunt-contrib-jshint": "~0.6.0",
+		"grunt": "~0.4.0"
+	},
+	"peerDependencies": {
+		"grunt": "~0.4.0"
+	},
+	"keywords": [
+		"gruntplugin",
+		"nette",
+		"tester"
+	]
+}

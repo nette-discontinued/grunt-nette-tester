@@ -1,0 +1,8 @@
+{
+	"name": "nette/grunt-nette-tester",
+	"description": "Testing of Grunt Nette Tester.",
+	"require": {
+		"php": ">=5.3.0",
+		"nette/tester": "*"
+	}
+}
