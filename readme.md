@@ -88,6 +88,11 @@ Type: `Boolean` Default: auto
 
 Use colors in output.
 
+### setup
+Type: `String` Default: `none`
+
+Script for runner setup.
+
 ### quiet
 Type: `Boolean` Default: `false`
 

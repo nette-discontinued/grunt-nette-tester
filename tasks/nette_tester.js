@@ -49,6 +49,9 @@ module.exports = function(grunt) {
         if (options.colors !== null) {
 			args.push('--colors', +options.colors);
         }
+        if (options.setup) {
+			args.push('--setup', options.setup);
+        }
         this.filesSrc.forEach(function(path) {
 			args.push(path);
         });
