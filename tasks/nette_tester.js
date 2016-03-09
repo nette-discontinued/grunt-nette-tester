@@ -23,38 +23,38 @@ module.exports = function(grunt) {
 			jobs: null,
 			colors: null,
 			quiet: false,
-        }), args = [];
+		}), args = [];
 
-        if (options.phpBin) {
+		if (options.phpBin) {
 			args.push('-p', options.phpBin);
-        }
-        if (options.phpIni) {
+		}
+		if (options.phpIni) {
 			args.push('-c', options.phpIni);
-        }
-        if (options.log) {
-			args.push('-log', options.log);
-        }
+		}
+		if (options.log) {
+			args.push('--log', options.log);
+		}
 		Object.keys(options.ini).forEach(function(value) {
 			args.push('-d', value + '=' + options.ini[value]);
 		});
-        if (options.skipped) {
+		if (options.skipped) {
 			args.push('-s');
-        }
-        if (options.tap) {
+		}
+		if (options.tap) {
 			args.push('--tap');
-        }
-        if (options.jobs) {
+		}
+		if (options.jobs) {
 			args.push('-j', options.jobs);
-        }
-        if (options.colors !== null) {
+		}
+		if (options.colors !== null) {
 			args.push('--colors', +options.colors);
-        }
-        if (options.setup) {
+		}
+		if (options.setup) {
 			args.push('--setup', options.setup);
-        }
-        this.filesSrc.forEach(function(path) {
+		}
+		this.filesSrc.forEach(function(path) {
 			args.push(path);
-        });
+		});
 
 		grunt.log.writeln('Starting Nette Tester');
 		grunt.verbose.writeln('Exec: ' + options.bin, args);
